@@ -36,8 +36,9 @@ class SimpleCoreRxView: UIView {
 		label.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
 		
 		button.translatesAutoresizingMaskIntoConstraints = false
-		button.topAnchor.constraint(equalTo: label.bottomAnchor).isActive = true
+		button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
 		button.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+		button.widthAnchor.constraint(equalToConstant: 120).isActive = true
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
