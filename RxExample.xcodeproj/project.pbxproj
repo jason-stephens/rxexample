@@ -28,6 +28,8 @@
 		BB87EDE6212C680C002862C8 /* StyleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE5212C680C002862C8 /* StyleFactory.swift */; };
 		BB87EDE8212C6A4E002862C8 /* SimpleRxSugarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE7212C6A4E002862C8 /* SimpleRxSugarModel.swift */; };
 		BB87EDEA212C7A2A002862C8 /* SimpleRxSugarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */; };
+		BB87EDEC212C95E6002862C8 /* SimpleCoreRxModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDEB212C95E6002862C8 /* SimpleCoreRxModelTests.swift */; };
+		BB87EDEE212C9672002862C8 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB29FF10211E69A900695CDF /* RxTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +293,7 @@
 		BB87EDE5212C680C002862C8 /* StyleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleFactory.swift; sourceTree = "<group>"; };
 		BB87EDE7212C6A4E002862C8 /* SimpleRxSugarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarModel.swift; sourceTree = "<group>"; };
 		BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarPresenter.swift; sourceTree = "<group>"; };
+		BB87EDEB212C95E6002862C8 /* SimpleCoreRxModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB87EDEE212C9672002862C8 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +333,7 @@
 				BB29FEC5211E655600695CDF /* RxExampleTests */,
 				BB29FED0211E655600695CDF /* RxExampleUITests */,
 				BB29FEAF211E655500695CDF /* Products */,
+				BB87EDED212C9672002862C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -431,6 +436,7 @@
 				BB29FF442121219C00695CDF /* SimpleCoreRxPresenter.swift */,
 				BB29FF46212121F600695CDF /* SimpleCoreRxView.swift */,
 				BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */,
+				BB87EDEB212C95E6002862C8 /* SimpleCoreRxModelTests.swift */,
 			);
 			path = CoreRx;
 			sourceTree = "<group>";
@@ -462,6 +468,13 @@
 				BB87EDE5212C680C002862C8 /* StyleFactory.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		BB87EDED212C9672002862C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -820,6 +833,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB87EDEC212C95E6002862C8 /* SimpleCoreRxModelTests.swift in Sources */,
 				BB29FEC7211E655600695CDF /* RxExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
