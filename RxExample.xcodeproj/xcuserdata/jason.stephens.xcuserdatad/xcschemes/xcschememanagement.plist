@@ -6,8 +6,28 @@
 	<dict>
 		<key>RxExample.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>35</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BB29FEAD211E655500695CDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB29FEC1211E655600695CDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB29FECC211E655600695CDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

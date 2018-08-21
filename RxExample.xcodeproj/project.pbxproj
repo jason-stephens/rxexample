@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB29FEB2211E655500695CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FEB1211E655500695CDF /* AppDelegate.swift */; };
-		BB29FEB4211E655500695CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FEB3211E655500695CDF /* ViewController.swift */; };
-		BB29FEB7211E655500695CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB29FEB5211E655500695CDF /* Main.storyboard */; };
+		BB29FEB4211E655500695CDF /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FEB3211E655500695CDF /* SelectionViewController.swift */; };
 		BB29FEB9211E655600695CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB29FEB8211E655600695CDF /* Assets.xcassets */; };
 		BB29FEBC211E655600695CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB29FEBA211E655600695CDF /* LaunchScreen.storyboard */; };
 		BB29FEC7211E655600695CDF /* RxExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FEC6211E655600695CDF /* RxExampleTests.swift */; };
@@ -18,6 +17,12 @@
 		BB29FF38211E69C900695CDF /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB29FEF8211E69A900695CDF /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB29FF3C211E69E300695CDF /* RxSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB29FF2C211E69B700695CDF /* RxSugar.framework */; };
 		BB29FF3D211E69E300695CDF /* RxSugar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB29FF2C211E69B700695CDF /* RxSugar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB29FF432121217800695CDF /* SimpleCoreRxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF422121217800695CDF /* SimpleCoreRxViewController.swift */; };
+		BB29FF452121219C00695CDF /* SimpleCoreRxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF442121219C00695CDF /* SimpleCoreRxPresenter.swift */; };
+		BB29FF47212121F600695CDF /* SimpleCoreRxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF46212121F600695CDF /* SimpleCoreRxView.swift */; };
+		BB29FF492121220D00695CDF /* SimpleCoreRxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */; };
+		BB29FF512121290400695CDF /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF502121290400695CDF /* SelectionView.swift */; };
+		BB29FF5421212DCE00695CDF /* SelectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF5321212DCE00695CDF /* SelectionOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,8 +263,7 @@
 /* Begin PBXFileReference section */
 		BB29FEAE211E655500695CDF /* RxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB29FEB1211E655500695CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB29FEB3211E655500695CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB29FEB6211E655500695CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB29FEB3211E655500695CDF /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		BB29FEB8211E655600695CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB29FEBB211E655600695CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB29FEBD211E655600695CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +275,12 @@
 		BB29FED3211E655600695CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB29FEDF211E69A800695CDF /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Carthage/Checkouts/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 		BB29FF21211E69B700695CDF /* RxSugar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RxSugar.xcodeproj; path = Carthage/Checkouts/RxSugar/RxSugar.xcodeproj; sourceTree = "<group>"; };
+		BB29FF422121217800695CDF /* SimpleCoreRxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxViewController.swift; sourceTree = "<group>"; };
+		BB29FF442121219C00695CDF /* SimpleCoreRxPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxPresenter.swift; sourceTree = "<group>"; };
+		BB29FF46212121F600695CDF /* SimpleCoreRxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxView.swift; sourceTree = "<group>"; };
+		BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxModel.swift; sourceTree = "<group>"; };
+		BB29FF502121290400695CDF /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		BB29FF5321212DCE00695CDF /* SelectionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,9 +335,9 @@
 		BB29FEB0211E655500695CDF /* RxExample */ = {
 			isa = PBXGroup;
 			children = (
+				BB29FF522121291500695CDF /* Selection */,
+				BB29FF40212120EF00695CDF /* SimpleExample */,
 				BB29FEB1211E655500695CDF /* AppDelegate.swift */,
-				BB29FEB3211E655500695CDF /* ViewController.swift */,
-				BB29FEB5211E655500695CDF /* Main.storyboard */,
 				BB29FEB8211E655600695CDF /* Assets.xcassets */,
 				BB29FEBA211E655600695CDF /* LaunchScreen.storyboard */,
 				BB29FEBD211E655600695CDF /* Info.plist */,
@@ -392,6 +402,35 @@
 				BB29FF36211E69B700695CDF /* RxSugar.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BB29FF40212120EF00695CDF /* SimpleExample */ = {
+			isa = PBXGroup;
+			children = (
+				BB29FF412121210300695CDF /* CoreRx */,
+			);
+			path = SimpleExample;
+			sourceTree = "<group>";
+		};
+		BB29FF412121210300695CDF /* CoreRx */ = {
+			isa = PBXGroup;
+			children = (
+				BB29FF422121217800695CDF /* SimpleCoreRxViewController.swift */,
+				BB29FF442121219C00695CDF /* SimpleCoreRxPresenter.swift */,
+				BB29FF46212121F600695CDF /* SimpleCoreRxView.swift */,
+				BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */,
+			);
+			path = CoreRx;
+			sourceTree = "<group>";
+		};
+		BB29FF522121291500695CDF /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				BB29FEB3211E655500695CDF /* SelectionViewController.swift */,
+				BB29FF502121290400695CDF /* SelectionView.swift */,
+				BB29FF5321212DCE00695CDF /* SelectionOptions.swift */,
+			);
+			path = Selection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -706,7 +745,6 @@
 			files = (
 				BB29FEBC211E655600695CDF /* LaunchScreen.storyboard in Resources */,
 				BB29FEB9211E655600695CDF /* Assets.xcassets in Resources */,
-				BB29FEB7211E655500695CDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,8 +769,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB29FEB4211E655500695CDF /* ViewController.swift in Sources */,
+				BB29FF432121217800695CDF /* SimpleCoreRxViewController.swift in Sources */,
+				BB29FEB4211E655500695CDF /* SelectionViewController.swift in Sources */,
+				BB29FF47212121F600695CDF /* SimpleCoreRxView.swift in Sources */,
+				BB29FF5421212DCE00695CDF /* SelectionOptions.swift in Sources */,
 				BB29FEB2211E655500695CDF /* AppDelegate.swift in Sources */,
+				BB29FF492121220D00695CDF /* SimpleCoreRxModel.swift in Sources */,
+				BB29FF512121290400695CDF /* SelectionView.swift in Sources */,
+				BB29FF452121219C00695CDF /* SimpleCoreRxPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,14 +822,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BB29FEB5211E655500695CDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB29FEB6211E655500695CDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BB29FEBA211E655600695CDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
