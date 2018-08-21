@@ -31,6 +31,8 @@ class SelectionView: UIView {
 		switch row {
 			case 0:
 				return SelectionOption.simpleCoreRx
+			case 1:
+				return SelectionOption.simpleRxSugar
 			default:
 				return nil
 		}

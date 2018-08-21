@@ -23,6 +23,11 @@
 		BB29FF492121220D00695CDF /* SimpleCoreRxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */; };
 		BB29FF512121290400695CDF /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF502121290400695CDF /* SelectionView.swift */; };
 		BB29FF5421212DCE00695CDF /* SelectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29FF5321212DCE00695CDF /* SelectionOptions.swift */; };
+		BB87EDC7212C674D002862C8 /* SimpleRxSugarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDC6212C674D002862C8 /* SimpleRxSugarViewController.swift */; };
+		BB87EDE3212C6796002862C8 /* SimpleRxSugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE2212C6796002862C8 /* SimpleRxSugarView.swift */; };
+		BB87EDE6212C680C002862C8 /* StyleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE5212C680C002862C8 /* StyleFactory.swift */; };
+		BB87EDE8212C6A4E002862C8 /* SimpleRxSugarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE7212C6A4E002862C8 /* SimpleRxSugarModel.swift */; };
+		BB87EDEA212C7A2A002862C8 /* SimpleRxSugarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -281,6 +286,11 @@
 		BB29FF482121220D00695CDF /* SimpleCoreRxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxModel.swift; sourceTree = "<group>"; };
 		BB29FF502121290400695CDF /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 		BB29FF5321212DCE00695CDF /* SelectionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionOptions.swift; sourceTree = "<group>"; };
+		BB87EDC6212C674D002862C8 /* SimpleRxSugarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarViewController.swift; sourceTree = "<group>"; };
+		BB87EDE2212C6796002862C8 /* SimpleRxSugarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarView.swift; sourceTree = "<group>"; };
+		BB87EDE5212C680C002862C8 /* StyleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleFactory.swift; sourceTree = "<group>"; };
+		BB87EDE7212C6A4E002862C8 /* SimpleRxSugarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarModel.swift; sourceTree = "<group>"; };
+		BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +345,7 @@
 		BB29FEB0211E655500695CDF /* RxExample */ = {
 			isa = PBXGroup;
 			children = (
+				BB87EDE4212C67CA002862C8 /* Styles */,
 				BB29FF522121291500695CDF /* Selection */,
 				BB29FF40212120EF00695CDF /* SimpleExample */,
 				BB29FEB1211E655500695CDF /* AppDelegate.swift */,
@@ -408,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				BB29FF412121210300695CDF /* CoreRx */,
+				BB87EDE1212C6753002862C8 /* RxSugar */,
 			);
 			path = SimpleExample;
 			sourceTree = "<group>";
@@ -431,6 +443,25 @@
 				BB29FF5321212DCE00695CDF /* SelectionOptions.swift */,
 			);
 			path = Selection;
+			sourceTree = "<group>";
+		};
+		BB87EDE1212C6753002862C8 /* RxSugar */ = {
+			isa = PBXGroup;
+			children = (
+				BB87EDC6212C674D002862C8 /* SimpleRxSugarViewController.swift */,
+				BB87EDE2212C6796002862C8 /* SimpleRxSugarView.swift */,
+				BB87EDE7212C6A4E002862C8 /* SimpleRxSugarModel.swift */,
+				BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */,
+			);
+			path = RxSugar;
+			sourceTree = "<group>";
+		};
+		BB87EDE4212C67CA002862C8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				BB87EDE5212C680C002862C8 /* StyleFactory.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,11 +802,16 @@
 			files = (
 				BB29FF432121217800695CDF /* SimpleCoreRxViewController.swift in Sources */,
 				BB29FEB4211E655500695CDF /* SelectionViewController.swift in Sources */,
+				BB87EDE8212C6A4E002862C8 /* SimpleRxSugarModel.swift in Sources */,
 				BB29FF47212121F600695CDF /* SimpleCoreRxView.swift in Sources */,
+				BB87EDE3212C6796002862C8 /* SimpleRxSugarView.swift in Sources */,
+				BB87EDE6212C680C002862C8 /* StyleFactory.swift in Sources */,
 				BB29FF5421212DCE00695CDF /* SelectionOptions.swift in Sources */,
 				BB29FEB2211E655500695CDF /* AppDelegate.swift in Sources */,
+				BB87EDC7212C674D002862C8 /* SimpleRxSugarViewController.swift in Sources */,
 				BB29FF492121220D00695CDF /* SimpleCoreRxModel.swift in Sources */,
 				BB29FF512121290400695CDF /* SelectionView.swift in Sources */,
+				BB87EDEA212C7A2A002862C8 /* SimpleRxSugarPresenter.swift in Sources */,
 				BB29FF452121219C00695CDF /* SimpleCoreRxPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

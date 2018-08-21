@@ -28,6 +28,8 @@ class SelectionViewController: UIViewController {
 		switch selectionOption {
 			case .simpleCoreRx:
 				return SimpleCoreRxViewController()
+			case .simpleRxSugar:
+				return SimpleRxSugarViewController()
 		}
 	}
 }

@@ -1,23 +1,14 @@
 import UIKit
 import RxSwift
+import RxSugar
 
-/*
-	NOTE: If RxCocoa were used, the creation of the Observable would be simpler.
-	RxCocoa allows the observable to be pulled from the button tap:
-		buttonTappedObservable = button.rx.tap.asObservable()
-	It also eliminates the code for the addTarget() call on the button
-	as well as the selector that it points to.
-	The PublishSubject would also not be necessary.
-*/
-
-class SimpleCoreRxView: UIView {
+class SimpleRxSugarView: UIView {
 	private let label = UILabel()
 	private let button = defaultButton()
-	private let buttonTappedSubject = PublishSubject<Void>()
 	let buttonTappedObservable: Observable<Void>
 	
 	override init(frame: CGRect) {
-		buttonTappedObservable = buttonTappedSubject.asObservable()
+		buttonTappedObservable = button.rxs.tap
 		super.init(frame: frame)
 		
 		backgroundColor = .white
@@ -26,7 +17,6 @@ class SimpleCoreRxView: UIView {
 		label.textAlignment = .center
 		
 		button.setTitle("Increment", for: .normal)
-		button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 		
 		addSubview(label)
 		addSubview(button)
@@ -47,10 +37,5 @@ class SimpleCoreRxView: UIView {
 	
 	func update(totalPoints: Int) {
 		label.text = "Total Points: \(totalPoints)"
-	}
-	
-	@objc
-	private func buttonTapped(sender: UIButton) {
-		buttonTappedSubject.onNext(())
 	}
 }

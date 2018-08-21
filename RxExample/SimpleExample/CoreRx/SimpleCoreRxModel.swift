@@ -1,17 +1,31 @@
 import Foundation
 import RxSwift
 
+/*
+	Why not just save the total as a property and modify that?
+	Because you would have to ensure that the property was set
+	before it goes out on the event stream (totalPointsObservable).
+	Having the value encapsulated in the internal streams is safer
+	and less-susceptible to accidental bugs.
+*/
+
 class SimpleCoreRxModel {
-	private var totalPoints = 0
-	private let totalPointsSubject = PublishSubject<Int>()
+	private let disposeBag = DisposeBag()
+	private let incrementSubject = PublishSubject<Void>()
 	let totalPointsObservable: Observable<Int>
 	
 	init() {
-		totalPointsObservable = totalPointsSubject.asObservable().startWith(totalPoints)
+		let valueSubject = BehaviorSubject<Int>(value: 0)
+		totalPointsObservable = valueSubject //The subject is already of type Observable
+		
+		incrementSubject
+			.withLatestFrom(valueSubject)
+			.map { $0 + 1 }
+			.subscribe(valueSubject)
+			.disposed(by: disposeBag)
 	}
 	
 	func incrementTotal() {
-		totalPoints += 1
-		totalPointsSubject.onNext(totalPoints)
+		incrementSubject.onNext(())
 	}
 }
