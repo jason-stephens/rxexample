@@ -13,11 +13,11 @@ import RxSwift
 class SimpleCoreRxView: UIView {
 	private let label = UILabel()
 	private let button = defaultButton()
-	private let buttonTappedSubject = PublishSubject<Void>()
-	let buttonTappedObservable: Observable<Void>
+	private let incrementRequestedSubject = PublishSubject<Void>()
+	let incrementRequestedObservable: Observable<Void>
 	
 	override init(frame: CGRect) {
-		buttonTappedObservable = buttonTappedSubject.asObservable()
+		incrementRequestedObservable = incrementRequestedSubject.asObservable()
 		super.init(frame: frame)
 		
 		backgroundColor = .white
@@ -51,6 +51,6 @@ class SimpleCoreRxView: UIView {
 	
 	@objc
 	private func buttonTapped(sender: UIButton) {
-		buttonTappedSubject.onNext(())
+		incrementRequestedSubject.onNext(())
 	}
 }

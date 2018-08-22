@@ -5,10 +5,10 @@ import RxSugar
 class SimpleRxSugarView: UIView {
 	private let label = UILabel()
 	private let button = defaultButton()
-	let buttonTappedObservable: Observable<Void>
+	let incrementRequestedObservable: Observable<Void>
 	
 	override init(frame: CGRect) {
-		buttonTappedObservable = button.rxs.tap
+		incrementRequestedObservable = button.rxs.tap
 		super.init(frame: frame)
 		
 		backgroundColor = .white
