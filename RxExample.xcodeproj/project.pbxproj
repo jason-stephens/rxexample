@@ -296,6 +296,7 @@
 		BB87EDE9212C7A2A002862C8 /* SimpleRxSugarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarPresenter.swift; sourceTree = "<group>"; };
 		BB87EDEB212C95E6002862C8 /* SimpleCoreRxModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoreRxModelTests.swift; sourceTree = "<group>"; };
 		BBB6F8DB212CACBA002C7A22 /* SimpleRxSugarModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRxSugarModelTests.swift; sourceTree = "<group>"; };
+		BBB6F8E3212DC0DD002C7A22 /* ReadMe.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ReadMe.playground; path = RxExample/ReadMe.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +330,7 @@
 		BB29FEA5211E655500695CDF = {
 			isa = PBXGroup;
 			children = (
+				BBB6F8E3212DC0DD002C7A22 /* ReadMe.playground */,
 				BB29FEDF211E69A800695CDF /* Rx.xcodeproj */,
 				BB29FF21211E69B700695CDF /* RxSugar.xcodeproj */,
 				BB29FEB0211E655500695CDF /* RxExample */,
